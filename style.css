@@ -30,7 +30,138 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .plateforme .content-nos-garanties {
-  padding: 25px 0;
+  padding: 1.56rem 0;
+}
+
+.plateforme .content-nos-garanties h2 {
+  color: #393939;
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2.50rem 0 1.125rem;
+}
+
+.plateforme .content-nos-garanties p {
+  color: #000000;
+  font-size: 1.37rem;
+  font-weight: 300;
+  margin-bottom: 1.56rem;
+  line-height: 1.7;
+}
+
+.plateforme .content-nos-garanties .btn {
+  color: #1075bb;
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.plateforme .content-nos-garanties .btn :hover {
+  color: #0d3365;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.plateforme .content-nos-garanties .btn :hover i {
+  margin-left: 30px;
+}
+
+.plateforme .content-nos-garanties .btn i {
+  margin-left: 21px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #1b539e;
+  font-weight: 600;
+}
+
+.plateforme .video-plateforme {
+  padding: 12px 0;
+}
+
+.plateforme .video-plateforme img, .plateforme .video-plateforme iframe {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.16);
+}
+
+.plateforme .video-plateforme img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.plateforme .video-plateforme .vid-bloc {
+  height: 100%;
+  -webkit-box-shadow: 8px 8px 15px 7px rgba(0, 0, 0, 0.212);
+          box-shadow: 8px 8px 15px 7px rgba(0, 0, 0, 0.212);
+}
+
+.plateforme .video-plateforme .h-video {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plateforme .video-plateforme .h-video .p-iframe .cover :after {
+  content: initial;
+}
+
+.plateforme .video-plateforme .h-video .p-iframe iframe {
+  width: 100%;
+}
+
+.plateforme .video-plateforme .cover {
+  position: relative;
+  cursor: pointer;
+}
+
+.plateforme .video-plateforme .cover :hover :after {
+  border-width: 60px 0 60px 103.9px;
+  border-color: transparent transparent transparent #0d3365;
+}
+
+.plateforme .video-plateforme .cover :hover :before {
+  opacity: 0.4;
+}
+
+.plateforme .video-plateforme .cover :after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #ffffff;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 0 35px 60.6px;
+  border-color: transparent transparent transparent #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.plateforme .video-plateforme .cover :before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -40,6 +171,27 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   }
   .plateforme .content-nos-garanties {
     padding: 20px;
+  }
+  .plateforme .content-nos-garanties h2 {
+    font-size: 30px;
+  }
+  .plateforme .content-nos-garanties p {
+    font-size: 18px;
+  }
+  .plateforme .video-plateforme .h-video .p-iframe iframe {
+    height: 18.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .plateforme .content-nos-garanties h2 {
+    font-size: 22px;
+  }
+  .plateforme .content-nos-garanties p {
+    font-size: 16px;
+  }
+  .plateforme .video-plateforme .h-video .p-iframe iframe {
+    height: 12.5rem;
   }
 }
 

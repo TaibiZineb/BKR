@@ -977,36 +977,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 #back-to-top.show {
     opacity: 1;
 }
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
 *,
 *::before,
 *::after {
@@ -1020,7 +990,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     font-weight:normal;
     font-style:normal}
     
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1030,9 +999,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff; }
-
-[tabindex="-1"]:focus:not(:focus-visible) {
-  outline: 0 !important; }
 
 hr {
   box-sizing: content-box;
@@ -15875,15 +15841,6 @@ a.plyr__control::before {
           margin: 0 0 10px;
           width: 100%; } }
 
-.b-actualite {
-  padding-top: 51px;
-  padding-bottom: 66px; }
-  @media only screen and (max-width: 1025px) {
-    .b-actualite {
-      padding-bottom: 30px; } }
-  @media only screen and (max-width: 641px) {
-    .b-actualite {
-      padding-top: 30px; } }
   .b-actualite .container {
     max-width: 1281px;
     padding: 0 10px; }
@@ -24725,118 +24682,9 @@ hr {
           .actualite .card-rapport .rapport p {
             font-size: 15px;
             margin: 5px 0; } }
-
-    .plateforme .content-nos-garanties h2 {
-      color: #393939;
-      font-size: 36px;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin: 40px 0 18px; }
-      @media only screen and (max-width: 1025px) {
-        .plateforme .content-nos-garanties h2 {
-          font-size: 30px; } }
-      @media only screen and (max-width: 641px) {
-        .plateforme .content-nos-garanties h2 {
-          font-size: 24px; } }
-    .plateforme .content-nos-garanties p {
-      color: #000000;
-      font-size: 22px;
-      font-weight: 300;
-      margin-bottom: 25px;
-      line-height: 1.7; }
-      @media only screen and (max-width: 992px) {
-        .plateforme .content-nos-garanties p {
-          font-size: 18px; } }
-      @media only screen and (max-width: 641px) {
-        .plateforme .content-nos-garanties p {
-          font-size: 16px; } }
-    .plateforme .content-nos-garanties .btn {
-      color: #1B539E;
-      background-color: transparent;
-      border: 1px solid transparent;
-      height: 50px;
-      line-height: 50px;
-      padding: 0;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: normal; }
-      .plateforme .content-nos-garanties .btn:hover {
-        color: #0d3365;
-        background-color: transparent;
-        border: 1px solid transparent; }
-        .plateforme .content-nos-garanties .btn:hover i {
-          margin-left: 30px; }
-      .plateforme .content-nos-garanties .btn i {
-        margin-left: 21px;
-        transition: all 0.4s ease-in-out;
-        color: #00B2BC;
-        font-weight: 600; }
-  .plateforme .video-plateforme {
-    padding: 12px 0; }
-    .plateforme .video-plateforme img,
-    .plateforme .video-plateforme iframe {
-      width: 100%;
-      height: 100%;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.16); }
-    .plateforme .video-plateforme img {
-      object-fit: cover; }
-    .plateforme .video-plateforme .vid-bloc {
-      height: 100%;
-      box-shadow: 8px 8px 15px 7px rgba(0, 0, 0, 0.212); }
-    .plateforme .video-plateforme .h-video {
-      height: 100%;
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-          align-items: center; }
-      .plateforme .video-plateforme .h-video.p-iframe .cover:after {
-        content: initial; }
-      .plateforme .video-plateforme .h-video.p-iframe iframe {
-        width: 100%; }
-        @media only screen and (max-width: 992px) {
-          .plateforme .video-plateforme .h-video.p-iframe iframe {
-            height: 300px; } }
-        @media only screen and (max-width: 641px) {
-          .plateforme .video-plateforme .h-video.p-iframe iframe {
-            height: 200px; } }
-    .plateforme .video-plateforme .cover {
-      position: relative;
-      cursor: pointer; }
-      .plateforme .video-plateforme .cover:hover:after {
-        border-width: 60px 0 60px 103.9px;
-        border-color: transparent transparent transparent #0d3365; }
-      .plateforme .video-plateforme .cover:hover:before {
-        opacity: 0.4; }
-      .plateforme .video-plateforme .cover:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        color: #ffffff;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 35px 0 35px 60.6px;
-        border-color: transparent transparent transparent #ffffff;
-        transition: all 0.4s ease-in-out; }
-      .plateforme .video-plateforme .cover:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 0;
-        background-color: #ffffff;
-        transition: all 0.4s ease-in-out; }
-
-        @media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
           .reassurance_chiffres .map-reass {
             object-fit: contain; } }
-
-
   @media only screen and (max-width: 641px) {
     .reassurance {
       padding: 30px 20px; } }
