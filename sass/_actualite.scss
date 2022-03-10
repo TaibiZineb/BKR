@@ -78,13 +78,14 @@
         padding: 0 20px 23px 0; 
         .rapport {
             border: 1px solid $blanc;
-            padding: 34px 19px 42px;
+            padding: 4px 7px 7px;
             position: relative;
             height: 100%;
             transition: all 0.4s ease-in-out; }
     }
 }
-@media only screen and (max-width: 1024px) 
+
+@media only screen and (max-width: 1024px)
 {
     .actualite {
         margin-bottom: 0px; 
@@ -96,12 +97,9 @@
                 padding: 0 15px; 
             }
         }
-
-   
     } 
 }
-@media only screen and (max-width: 600px) 
-{
+@media only screen and (max-width: 600px) {
     .actualite {
         margin-bottom: 0px; 
         .actus {
