@@ -22,8 +22,158 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a :hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 .publications {
   margin-bottom: 2.50rem;
+}
+
+.publications h2 {
+  color: #393939;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 40px 0 58px;
+  text-align: center;
+}
+
+.publications .pub {
+  padding: 40px 20px 37px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.publications .pub .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3ca7f1;
+  padding: 66px 15px 49px 19px;
+}
+
+.publications .pub.first {
+  position: relative;
+  padding: 0;
+}
+
+.publications .pub.first .row {
+  height: 100%;
+}
+
+.publications .pub.first img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.publications .pub.first p {
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  min-height: 120px;
+}
+
+.publications .pub.first :after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #393939;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: -1;
+}
+
+.publications .pub.first :hover :after {
+  width: 50%;
+}
+
+.publications .pub.first :after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #393939;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: -1;
+}
+
+.publications .pub.second {
+  background-color: #b8b5b5;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .publications {
+    margin-bottom: 1.875rem;
+  }
+  .publications h2 {
+    font-size: 24px;
+  }
+  .publications .pub {
+    padding: 25px 20px;
+  }
+  .publications .pub :hover {
+    opacity: 0.9;
+  }
+  .publications .pub .time {
+    margin-bottom: 3px;
+  }
+  .publications .pub span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  .publications .pub p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .publications .pub.first img {
+    width: calc(100% + 30px);
+    max-width: unset;
+    left: -15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .publications h2 {
+    font-size: 30px;
+  }
 }
 
 .actualite {
@@ -60,6 +210,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .actualite .bloc-column :first-child h2 {
   margin-bottom: 44px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .actualite .actus {
@@ -251,6 +404,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   background-color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.plateforme .video-plateforme .plyr__video-embed {
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.plateforme .video-plateforme .plyr__video-embed iframe {
+  border: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 @media only screen and (max-width: 1024px) {

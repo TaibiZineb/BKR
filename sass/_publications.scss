@@ -1,3 +1,119 @@
 .publications {
     margin-bottom: 2.50rem; 
+    h2 {
+        color: $backfooter;
+        font-size: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 40px 0 58px;
+        text-align: center; 
+    }
+    .pub{
+        padding: 40px 20px 37px;
+        transition: all 0.3s ease-in; 
+            .article {
+                display: flex;
+                align-items: center;
+                background-color: $iconburger;
+                padding: 66px 15px 49px 19px;
+            }
+        }
+    .pub.first{
+            position: relative;
+            padding: 0;
+            .row{
+                height: 100%;
+            } 
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+                z-index: -1; 
+            }
+            p{
+                font-size: 34px;
+                line-height: 1.2;
+                letter-spacing: -1px;
+                min-height: 120px;
+            }
+            :after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0;
+                height: 100%;
+                background-color: $backfooter;
+                transition: all 0.4s ease-in;
+                z-index: -1; 
+            }
+            :hover
+            {
+                :after {
+                    width: 50%; 
+                }
+            }
+            :after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0;
+                height: 100%;
+                background-color: #393939;
+                transition: all 0.4s ease-in;
+                z-index: -1; 
+            }
+        }
+    .pub.second{
+            background-color: $gris;
+            position: relative;
+        }
+    }
+
+
+@media only screen and (max-width: 600px) {
+    .publications {
+        margin-bottom: 1.875rem; 
+        h2 {
+            font-size: 24px; 
+        }
+        .pub{
+            padding: 25px 20px; 
+            :hover{
+                opacity: 0.9; 
+            }
+            .time{
+                margin-bottom: 3px; 
+            }
+            span{
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 12px;
+                transition: all 0.4s ease-in; 
+            }
+            p{
+                color: $blanc;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.3; 
+            }
+        }
+        .pub.first
+        {
+            img {
+                width: calc(100% + 30px);
+                max-width: unset;
+                left: -15px; 
+            } 
+        }
+    } 
+}
+@media only screen and (max-width: 1024px) {
+    .publications {
+        h2 {
+            font-size: 30px; }
+    } 
 }

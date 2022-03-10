@@ -22,7 +22,10 @@
         :first-child {
             padding: 0 92px 0 0; 
             h2 {
-                margin-bottom: 44px; }
+                margin-bottom: 44px;
+                width: max-content;
+            
+            }
         }
     }
     .actus {
