@@ -175,11 +175,9 @@
     left: 0;
     content: " "
   }
-  
   .drawer-hamburger-icon:after {
     top: 10px
   }
-  
   .drawer-open .drawer-hamburger-icon {
     background-color: transparent
   }
@@ -433,16 +431,13 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
     border: 1px solid #5897fb;
     border-top: none;
 }
-
 .select2-drop.select2-drop-above.select2-drop-active {
     border-top: 1px solid #5897fb;
 }
-
 .select2-drop-auto-width {
     border-top: 1px solid #aaa;
     width: auto;
 }
-
 .select2-container .select2-choice .select2-arrow {
     display: inline-block;
     width: 18px;
@@ -463,7 +458,6 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
     background-image: linear-gradient(to top, #ccc 0%, #eee 60%);
 }
-
 .select2-container .select2-choice .select2-arrow b {
     display: block;
     width: 100%;
@@ -15841,37 +15835,6 @@ a.plyr__control::before {
           margin: 0 0 10px;
           width: 100%; } }
 
-  .b-actualite .container {
-    max-width: 1281px;
-    padding: 0 10px; }
-    .b-actualite .container .row {
-      margin: 0; }
-    .b-actualite .container .c-heading {
-      padding-left: 16px;
-      margin-bottom: 42px; }
-      @media only screen and (max-width: 1025px) {
-        .b-actualite .container .c-heading {
-          margin-bottom: 20px; } }
-      @media only screen and (max-width: 641px) {
-        .b-actualite .container .c-heading {
-          padding: 0;
-          margin-bottom: 10px; } }
-    .b-actualite .container .block-actus {
-      margin: 0;
-      margin-bottom: 84px; }
-      @media only screen and (max-width: 1025px) {
-        .b-actualite .container .block-actus {
-          margin-bottom: 30px; } }
-      .b-actualite .container .block-actus .styleCardActus-List .card-list .card-body .card-text {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-  .b-actualite .b-explorer {
-    padding-left: 17px; }
-    @media only screen and (max-width: 641px) {
-      .b-actualite .b-explorer {
-        padding: 0; } }
-
 .newsletter {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
   .newsletter .form-group {
@@ -20484,30 +20447,6 @@ p {
       z-index: -1; }
     .list.first:hover:after {
       width: 41.66667%; }
-
-.page-actualite h1 {
-  color: #393939;
-  font-size: 32px;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 0 0 58px; }
-  @media only screen and (max-width: 1025px) {
-    .page-actualite h1 {
-      font-size: 22px; } }
-  @media only screen and (max-width: 641px) {
-    .page-actualite h1 {
-      font-size: 18px; } }
-
-.page-actualite .nbr-result {
-  display: block;
-  text-align: center;
-  margin: 40px 0 50px;
-  font-weight: 300;
-  font-size: 16px;
-  color: #6D6E70; }
-  .page-actualite .nbr-result strong {
-    font-weight: 500; }
-
 .actualite.actus {
   position: relative; }
   @media only screen and (max-width: 992px) {
@@ -24515,16 +24454,7 @@ hr {
         transition: all 0.3s ease-in-out;
         color: #00B2BC;
         font-weight: 600; }
-
-.actualite {
-  padding: 65px 0 50px;
-  position: relative; }
-  @media only screen and (max-width: 1025px) {
-    .actualite {
-      margin-bottom: 0px; } }
-  @media only screen and (max-width: 992px) {
-    .actualite {
-      margin-bottom: 0px; } }
+  
   @media only screen and (max-width: 1025px) {
     .actualite .btn-actus {
       padding: 0 15px; } }
@@ -24931,15 +24861,6 @@ hr {
 canvas {
   display: block;
   }
-
-#particles-js {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%; }
 
 .loader {
   position: fixed;

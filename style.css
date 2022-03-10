@@ -22,6 +22,23 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+.actualite {
+  padding: 65px 0 50px;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .actualite {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .actualite {
+    margin-bottom: 0px;
+  }
+}
+
 .plateforme {
   position: relative;
   padding-bottom: 75px;
