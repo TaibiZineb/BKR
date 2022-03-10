@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
     <link rel="icon" type="image/png"  href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
+    
     <title>Maquette BKR</title>
 </head>
 <body class="drawer--left">
@@ -28,7 +29,7 @@
                 <span></span>
             </button>
                 <h1 class="header-logo">
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="#">
                         <img class="logo-white" src="images/Logo BKR.png" alt="BKR" title="BKR">
                     </a>
                 </h1>
@@ -44,7 +45,7 @@
                         <a class="nav-link" href="#">Secteurs d&#039;activités</a>
                         <ul class="sous-title">
                             <li>
-                                <a href="">
+                                <a href="#">
                                 <img src="images/Agroalimentaire.png" alt="BKR" title="BKR">
                                 <span>Agroalimentaire</span>
                                 </a>
@@ -103,11 +104,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/fr/valeurs">Valeurs</a>
+                        <a class="nav-link" href="#">Valeurs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                           href=""> Macro Strategy</a>
+                        <a class="nav-link" href="#"> Macro Strategy</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Portefeuille BKR</a>
@@ -117,10 +117,18 @@
             <div class="upperbar pr-5 mr-2">
                     <div class="row">
                             <a class="btn btn-h40 btn-w10" href="">
-                            <i class="fa fa-lock"></i>BKR DIRECT</a>
+                            <i class="fal fa-lock" aria-hidden="true"></i>BKR DIRECT</a>
                     </div>
             </div>
             <div class="lang-menu">
+                <div class="s-langue">
+                    <i class="fal fa-globe"></i>
+                    <i class="fal fa-angle-down"></i>
+                    <div>
+                        <a href="" class=" btn"> EN</a>
+                     </div>
+                </div>
+                <div>
                 <div class="selected-lang">
                     En
                 </div>
@@ -210,11 +218,11 @@
         </div>
     </div>
     </div>-->
-    <div class="publications">
+<div class="publications">
+    <div class="container">
+        <h2 class="small-caps">Nos dernières publications</h2>
         <div class="container">
-            <h2 class="small-caps">Nos dernières publications</h2>
-            <div class="container">
-                <div class="row">
+            <div class="row">
                     <div class="col-md-6 col-lg-8 pub first">
                         <a href="">
                         <img src="images/Rectangle.png" alt="">
@@ -267,9 +275,9 @@
                 </a>
             </div>
         </div>
-    </div>   
+</div>   
 <div class="drawer-overlay drawer-toggle"></div>
-    <div class="actualite">
+<div class="actualite">
         <div id="particles-js"></div>
         <img src="images/abstract-bg.png" alt="" class="img-bg">
         <div class="container">
@@ -381,15 +389,14 @@
                                 </a>
                             </div>       
                             <div class="col-md-12 btn-actus">
-                                <a href="" class="btn rprt">
-                                    Tous les Rapports périodiques                                 <i class="fa fa-arrow-right"></i>
-                                </a>
+                                <a href="#" class="btn rprt">Tous les Rapports périodiques                                 
+                                <i class="fa fa-arrow-right"></i></a>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <div class="plateforme">
         <div class="container">
             <div class="card-nos-garanties">
@@ -424,7 +431,7 @@
                 </div>
             </div>
         </div>
-    </div>   
+</div>   
 <!--<a href="#" id="back-to-top" title="Back to top">&uarr;</a>-->
 <div class="reassurance_chiffres">
     <img class="map-reass" src="images/world map.png" alt="">
@@ -492,15 +499,16 @@
                                                             </div>
             </div>
         </div>
-    </div>
+</div>
 <footer class="b-footer">
     <div class="b-footer__contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 b-logo ">
+                <div class="col-lg-3 col-md-6 col-sm-12 b-logo">
                     <div class="b-footer__contact--bkr">
                         <a href="">
                             <img src="images/Logo BKR.png" alt="bkr" title="bkr"></a>
+                        <p>BMCE Capital Research est le plus important bureau de Recherche et d'analyse financiere sell side au Maroc,expert sur les marchés Actions Taux Intérêt Change et Matières Premières Maroc, Tunisie Afrique de l'Ouest</p>    
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 b-links">
@@ -573,14 +581,14 @@
                             </div>
                                
                         </div>
-                    </div>
-                                <div class="col-lg-12 col-md-12 b-footer__bottomline">
+                </div>
+                <div class="col-lg-12 col-md-12 b-footer__bottomline">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 copyright">
-                                <p>&copy; Copyright 2020 - BMCE Capital Research  </p>
+                            <div class="row">
+                                <div class="col-lg-12 copyright">
+                                    <p class="pcopyright">&copy; Copyright 2020 - BMCE Capital Research  </p>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -589,5 +597,4 @@
 </footer>
 
 </body>
-
 </html>

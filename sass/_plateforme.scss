@@ -1,0 +1,19 @@
+.plateforme
+ {
+    position: relative;
+    padding-bottom: 75px;
+    background-color: $grisplatef;
+    padding-top: 125px; 
+    .content-nos-garanties {
+        padding: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .plateforme {
+      padding-bottom: 30px;
+      padding-top: 20px; 
+      .content-nos-garanties {
+        padding: 20px; }
+    } 
+}
