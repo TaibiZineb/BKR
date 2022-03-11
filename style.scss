@@ -15,3 +15,43 @@
 //import footer
 @import './sass/footer';
   
+%drawerb
+{
+    width: 100%;
+    height: 2px;
+    transition: all .6s cubic-bezier(.19, 1, .22, 1);
+    background-color: #3ca7f1;
+}
+%drawer{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: " ";
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+    background-color: $Panafricanh2;
+    color: $blanc;
+    border-radius: 50%;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+    :hover {
+        background: $blanc;
+    }
+    .show {
+        opacity: 1;
+    }
+  }

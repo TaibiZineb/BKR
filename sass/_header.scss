@@ -35,29 +35,43 @@
         cursor: pointer;
         background-color: transparent;
     }
-    
-    
-
-    
-    
-
 }
-%drawerb
-    {
-        width: 100%;
-        height: 2px;
-        transition: all .6s cubic-bezier(.19, 1, .22, 1);
-        background-color: #3ca7f1;
-    }
+
 .drawer-hamburger-icon {
-        position: relative;
-        display: block;
-        margin-top: 10px;
+    position: relative;
+    display: block;
+    margin-top: 10px;
     @extend %drawerb;
-    :after{
-            @extend %drawerb;
-        }
-    :before{
-            @extend %drawerb;
-        }
+    
 }
+.drawer-hamburger-icon:after {
+    @extend %drawerb;
+    @extend %drawer;
+}
+
+.drawer-hamburger-icon:before{
+    @extend %drawerb;
+    @extend %drawer;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem; }
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; 
+    .nav-link {
+        padding-right: 0;
+        padding-left: 0; }
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center; }

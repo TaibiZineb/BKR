@@ -1,6 +1,11 @@
 .actualite {
     padding: 65px 0 50px;
     position: relative; 
+    .row{
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
     .img-bg {
         position: absolute;
         width: 100%;
@@ -20,7 +25,7 @@
     .bloc-column {
         padding: 0; 
         :first-child {
-            padding: 0 92px 0 0; 
+            padding: 0; 
             h2 {
                 margin-bottom: 44px;
                 width: max-content;
