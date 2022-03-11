@@ -56,6 +56,16 @@ footer {
                     margin: 20px 0;
                 }
             }
+            .espaceprive
+            {
+                .btns
+                {
+                    .btn {
+                        color: $blanc;
+                        border: 1px solid $blanc;
+                    }
+                }
+            }
         }
         .copyright
         {
