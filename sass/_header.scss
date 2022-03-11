@@ -16,43 +16,21 @@
         padding: 0;
         border: 0
     }  
-.drawer-hamburger
-{
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    display: block;
-    box-sizing: content-box;
-    width: 2rem;
-    padding: 0;
-    padding: 18px .75rem 30px;
-    transition: all .6s cubic-bezier(.19, 1, .22, 1);
-    transform: translateZ(0);
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-    :hover {
+    .hamburger{
         cursor: pointer;
-        background-color: transparent;
-    }
-}
 
-.drawer-hamburger-icon {
-    position: relative;
-    display: block;
-    margin-top: 10px;
-    @extend %drawerb;
-    
-}
-.drawer-hamburger-icon:after {
-    @extend %drawerb;
-    @extend %drawer;
-}
-
-.drawer-hamburger-icon:before{
-    @extend %drawerb;
-    @extend %drawer;
-}
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background-color: $iconburger;
+          }
+      }
+      
+      
 
 .navbar {
     position: relative;
