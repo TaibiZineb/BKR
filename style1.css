@@ -3,7 +3,6 @@
     top: 10px
  }
 
-
 @media (min-width: 992px) {
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
@@ -18,23 +17,13 @@
       .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container,
-    .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-    .navbar-expand-lg .navbar-collapse {
-      display: -ms-flexbox !important;
-      display: flex !important;
-      -ms-flex-preferred-size: auto;
-          flex-basis: auto; }
-    .navbar-expand-lg .navbar-toggler {
-      display: none; } 
+
     }
-        @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
           header .drawer-nav .drawer-menu-item i {
             font-size: 16px;
             margin-top: 4px; }
-           }
+}
 
  @media only screen and (max-width: 992px) {
           header .drawer-nav .drawer-menu::after {
@@ -52,44 +41,17 @@
 
     @media only screen and (max-width: 1025px) {
       header .upperbar {
-        display: none; } }
+        display: none; } 
+      }
     @media only screen and (max-width: 1025px) {
       header .upperbar .container {
-        padding: 10px 65px; } }
+        padding: 10px 65px; } 
+      }
     @media only screen and (max-width: 641px) {
       header .upperbar .container {
         padding: 10px 20px; } 
       }
 
-    header .navbar-toggler span {
-      display: block;
-      position: absolute;
-      height: 3px;
-      width: 100%;
-      border-radius: 9px;
-      opacity: 1;
-      left: 0;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-      background: #1E313E; }
-      header .navbar-toggler span:nth-child(1) {
-        top: 0px; }
-      header .navbar-toggler span:nth-child(2) {
-        top: 10px; }
-      header .navbar-toggler span:nth-child(3) {
-        top: 20px; }
-    @media only screen and (max-width: 1025px) {
-      header .navbar-toggler.is-open span {
-        background: #0d3365; } }
-    header .navbar-toggler.is-open span:nth-child(1) {
-      top: 11px;
-      transform: rotate(135deg); }
-    header .navbar-toggler.is-open span:nth-child(2) {
-      opacity: 0;
-      left: -60px; }
-    header .navbar-toggler.is-open span:nth-child(3) {
-      top: 11px;
-      transform: rotate(-135deg); }
   @media screen and (min-width: 992px) {
     header .searsh-container {
       transition: all 0.3s ease-in-out;
@@ -117,7 +79,8 @@
       transition-duration: .3s;
       transform-origin: top;
       transform: scaleY(0);
-      height: 0; } }
+      height: 0; } 
+    }
   @media only screen and (max-width: 992px) {
     header .searsh-container > form {
       position: relative; }
@@ -129,84 +92,19 @@
         left: 6px;
         top: 8px;
         color: #b0b0b0;
-        font-size: 16px; } }
+        font-size: 16px; } 
+      }
   @media only screen and (max-width: 767px) {
     header .searsh-container > form {
       width: 100%;
-      position: relative; } }
-  @media only screen and (max-width: 992px) {
-    header .searsh-container > form #txt-global-search {
-      padding-left: 30px; } }
-  @media only screen and (max-width: 767px) {
-    header .searsh-container > form #txt-global-search {
-      width: 100%;
-      padding-left: 30px; } }
-  header .navbar-collapse {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-top: 12px;
-    padding-bottom: 5px; }
-    @media screen and (min-width: 992px) {
-      header .navbar-collapse {
-        transition: all 0.3s ease-in-out;
-        opacity: 1;
-        visibility: visible; } }
-    header .navbar-collapse .upperbar {
-      width: 100%;
-      padding: 6px 0;
-      display: none; }
-      @media only screen and (max-width: 1025px) {
-        header .navbar-collapse .upperbar {
-          display: block; } }
-      @media only screen and (max-width: 1025px) {
-        header .navbar-collapse .upperbar .container {
-          padding: 10px 65px; } }
-      @media only screen and (max-width: 641px) {
-        header .navbar-collapse .upperbar .container {
-          padding: 10px 20px; } }
-      header .navbar-collapse .upperbar .tags {
-        padding: 0;
-        text-align: right; }
-        @media only screen and (max-width: 1025px) {
-          header .navbar-collapse .upperbar .tags {
-            text-align: left; } }
-      header .navbar-collapse .upperbar a {
-        color: #1e303d;
-        padding: 0 5px;
-        height: 23px;
-        line-height: 23px;
-        font-size:  0.9375rem;
-        transition: all .3s ease-in-out; }
-        @media only screen and (max-width: 1025px) {
-          header .navbar-collapse .upperbar a {
-            color: #ffffff;
-            font-size:  1.375rem;
-            padding: 6px;
-            height: auto;
-            line-height: normal;
-            font-weight: 300;
-            border: 1px solid #303856; } }
-        header .navbar-collapse .upperbar a:hover {
-          background-color: #263055;
-          color: white; }
-          @media only screen and (max-width: 1025px) {
-            header .navbar-collapse .upperbar a:hover {
-              background-color: #fe9301;
-              border: 1px solid #fe9301; } }
-        header .navbar-collapse .upperbar a.active {
-          background-color: #263055;
-          color: #ffffff; }
-          @media only screen and (max-width: 1025px) {
-            header .navbar-collapse .upperbar a.active {
-              background-color: #fe9301;
-              border: 1px solid #fe9301; } }
+      position: relative; } 
+    }
+
+
   @media only screen and (max-width: 1025px) {
     header .navbar-expand-lg .navbar-collapse {
-      -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      -ms-flex-positive: 1;
           flex-grow: 1;
-      -ms-flex-align: center;
           align-items: center;
       display: inline-block !important;
       position: fixed;
@@ -262,10 +160,9 @@
       font-weight: 500; } }
   @media only screen and (max-width: 324px) {
     header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {
-      font-size:  1.5rem; } }
-  header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link.show i {
-    transition: all .3s ease-in-out;
-    transform: rotate(90deg); }
+      font-size:  1.5rem; }
+     }
+
   @media only screen and (max-width: 1025px) {
     header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent {
       padding-bottom: 0; } }
@@ -365,10 +262,7 @@
   @media only screen and (max-width: 1025px) {
     header .collapse:not(.show) {
       display: block !important; } }
-  header .navbar {
-    margin: 0 auto;
-    padding: 5px 15px;
-    transition: all .15s ease-in-out; }
+
     header .navbar .navbar-nav {
       -ms-flex-align: center;
           align-items: center;
@@ -388,46 +282,14 @@
           text-align: center;
           position: relative;
           padding: 0; } }
-      header .navbar .navbar-nav .nav-item .btn {
-        text-transform: uppercase;
-        background-color: #00B2BC;
-        border-color: #00B2BC;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.28); }
-        header .navbar .navbar-nav .nav-item .btn:hover {
-          background-color: #ffffff;
-          border-color: #00B2BC;
-          color: #00B2BC;
-          box-shadow: none; }
-      header .navbar .navbar-nav .nav-item.active .nav-link:after {
-        width: 100%; }
-      header .navbar .navbar-nav .nav-item.parent > a .avatar i.fa-user-circle {
-        font-size: 20px; }
-      header .navbar .navbar-nav .nav-item.parent > a i {
-        display: inline-block;
-        position: relative;
-        right: -2px;
-        top: -1px;
-        transform: rotate(90deg);
-        font-size:  0.5rem;
-        transition: all .3s ease-in-out; }
-        header .navbar .navbar-nav .nav-item.parent > a i.fa-user-circle {
-          font-size:  1rem;
-          transform: rotate(0deg);
-          vertical-align: middle;
-          margin-right: 6px;
-          font-weight: 200; }
-      header .navbar .navbar-nav .nav-item.dropdown a.dropdown-toggle:hover {
-        transition: all .3s ease-in-out; }
-        header .navbar .navbar-nav .nav-item.dropdown a.dropdown-toggle:hover .dropdown-menu {
-          display: block; }
-      header .navbar .navbar-nav .nav-item .nav-link {
+header .navbar .navbar-nav .nav-item .nav-link {
         font-size: 17px;
         font-weight: 400;
         color: #1e303d;
         margin: 0 36px 0 0;
         position: relative;
         padding: 0 0 6px; }
-        header .navbar .navbar-nav .nav-item .nav-link:after {
+header .navbar .navbar-nav .nav-item .nav-link:after {
           content: '';
           height: 5px;
           background: #00B2BC;
@@ -440,49 +302,46 @@
           width: 0;
           transition: all .5s ease-in-out;
           opacity: 0; }
-          @media only screen and (max-width: 1025px) {
-            header .navbar .navbar-nav .nav-item .nav-link:after {
-              display: none; } }
-        header .navbar .navbar-nav .nav-item .nav-link .avatar {
-          max-width: 22px;
-          border-radius: 50%;
-          overflow: hidden;
-          display: inline-block;
-          vertical-align: bottom;
-          margin-right: 4px; }
-          @media only screen and (max-width: 1025px) {
-            header .navbar .navbar-nav .nav-item .nav-link .avatar {
+@media only screen and (max-width: 1025px) {
+header .navbar .navbar-nav .nav-item .nav-link:after {
+  display: none; } }
+
+@media only screen and (max-width: 1025px) {
+  header .navbar .navbar-nav .nav-item .nav-link .avatar {
               width: 40px;
               max-width: none; } }
-        @media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 1370px) {
           header .navbar .navbar-nav .nav-item .nav-link {
             font-size:  1rem;
             margin-right: 0;
             margin-left: 0;
             margin-top: 0;
-            margin-right: 13px; } }
-        @media only screen and (max-width: 1290px) {
+            margin-right: 13px; }
+           }
+@media only screen and (max-width: 1290px) {
           header .navbar .navbar-nav .nav-item .nav-link {
-            font-size:  0.875rem; } }
-        @media (min-width: 1025px) and (max-width: 1055px) {
+            font-size:  0.875rem; } 
+          }
+@media (min-width: 1025px) and (max-width: 1055px) {
           header .navbar .navbar-nav .nav-item .nav-link {
             font-size:  0.84375rem; } }
-        @media only screen and (max-width: 992px) {
+ @media only screen and (max-width: 992px) {
           header .navbar .navbar-nav .nav-item .nav-link {
             display: inline-block; }
             header .navbar .navbar-nav .nav-item .nav-link:after {
-              display: none; } }
-        header .navbar .navbar-nav .nav-item .nav-link:hover {
-          background-color: transparent; }
-      header .navbar .navbar-nav .nav-item.active .nav-link:after {
+              display: none; } 
+            }
+
+header .navbar .navbar-nav .nav-item.active .nav-link:after {
         opacity: 1; }
-      @media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
         header .navbar .navbar-nav .nav-item .btn {
           width: 100%;
           height: 45px;
           line-height: 45px;
-          font-size:  1.375rem; } }
-      @media only screen and (max-width: 324px) {
+          font-size:  1.375rem; } 
+        }
+@media only screen and (max-width: 324px) {
         header .navbar .navbar-nav .nav-item .btn {
           width: 100%; } }
       @media only screen and (max-width: 1025px) {
@@ -639,7 +498,7 @@
           @media only screen and (max-width: 641px) {
             header .navbar .navbar-nav .nav-item ul.sous-title.show {
               padding: 0 0 0 40px; } }
-        header .navbar .navbar-nav .nav-item ul.sous-title li {
+header .navbar .navbar-nav .nav-item ul.sous-title li {
           position: relative;
           text-align: left;
           margin: 0 0 6px 6px;
@@ -647,10 +506,5 @@
           -ms-flex: 0 0 20%;
               flex: 0 0 20%;
           width: auto; }
-          @media screen and (min-width: 992px) {
-            header .navbar .navbar-nav .nav-item ul.sous-title li {
-              margin: 0 0 28px; } }
-          @media only screen and (max-width: 1025px) {
-            header .navbar .navbar-nav .nav-item ul.sous-title li {
-              margin: 0 0 6px;}}
+
 
