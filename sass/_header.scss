@@ -42,17 +42,71 @@
     margin: 0 auto;
     padding: 5px 15px;
     transition: all .15s ease-in-out; 
+    .navbar-nav {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none; 
+        align-items: center;
+        margin: 0 auto; 
+        flex-direction: row; 
+        .nav-item{
+            .nav-link {
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 17px;
+                font-weight: 400;
+                color: #1e303d;
+                margin: 0 36px 0 0;
+                position: relative;
+                padding: 0 0 6px; 
+                padding-bottom: 10px;
+                border: none;
+                display: flex;
+                align-items: center;
+                font-size:  1rem;
+             }
+            ul.sous-title {
+                position: absolute;
+                background-color: #ffffff;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 10px 10px 10px 3px;
+                overflow: hidden;
+                padding: 0 0 0 95px;
+                white-space: initial;
+                margin: 0;
+                width: max-content;
+                left: 47%;
+                transform: translateX(-50%) scaleY(0);
+                display: flex;
+                flex-wrap: wrap;
+                visibility: visible;
+                top: 100%; 
+                li {
+                    position: relative;
+                    text-align: left;
+                    margin: 0 0 6px 6px;
+                    transition: all .2s ease-in-out;
+                    flex: 0 0 20%;
+                    width: auto; 
+                }
+            }  
+        }
+        .nav-item:hover{
+            ul.sous-title {
+                visibility: visible;
+                opacity: 1;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+                z-index: -1;
+                transition-delay: 0s, 0s, .2s;
+                transform: translateX(-50%) scaleY(1);
+               }        
+        }    
+        
+    }
 }
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none; 
-    .nav-link {
-        padding-right: 0;
-        padding-left: 0; }
-}
+
 .navbar-collapse {
     flex-basis: auto; ;
     flex-grow: 1;

@@ -610,22 +610,90 @@ a :hover {
   transition: all .15s ease-in-out;
 }
 
-.navbar-nav {
+.navbar .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.navbar-nav .nav-link {
+.navbar .navbar-nav .nav-item .nav-link {
   padding-right: 0;
   padding-left: 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #1e303d;
+  margin: 0 36px 0 0;
+  position: relative;
+  padding: 0 0 6px;
+  padding-bottom: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-item ul.sous-title {
+  position: absolute;
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 10px 10px 3px;
+  overflow: hidden;
+  padding: 0 0 0 95px;
+  white-space: initial;
+  margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: 47%;
+  -webkit-transform: translateX(-50%) scaleY(0);
+          transform: translateX(-50%) scaleY(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  visibility: visible;
+  top: 100%;
+}
+
+.navbar .navbar-nav .nav-item ul.sous-title li {
+  position: relative;
+  text-align: left;
+  margin: 0 0 6px 6px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  width: auto;
+}
+
+.navbar .navbar-nav .nav-item:hover ul.sous-title {
+  visibility: visible;
+  opacity: 1;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+  z-index: -1;
+  -webkit-transition-delay: 0s, 0s, .2s;
+          transition-delay: 0s, 0s, .2s;
+  -webkit-transform: translateX(-50%) scaleY(1);
+          transform: translateX(-50%) scaleY(1);
 }
 
 .navbar-collapse {
