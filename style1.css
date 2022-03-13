@@ -1,15 +1,4 @@
-@media (min-width: 992px) {
-  .navbar-nav {
-   flex-direction: row; }
- }
- 
-   @media only screen and (max-width: 641px) {
-     header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {
-       padding: 10px 20px;
-       font-size: 16px;
-       font-weight: 500; } }
 
- 
    @media only screen and (max-width: 1025px) {
      header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent {
        padding-bottom: 0; } }
@@ -17,27 +6,7 @@
      header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent.account {
        margin: 0;
        margin-left: 40px; } }
-   @media only screen and (max-width: 641px) {
-     header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent .nav-link {
-       position: relative; }
-       header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent .nav-link::after {
-         content: "\E94A";
-         font-family: icomoon;
-         position: absolute;
-         display: inline-block !important;
-         transform: rotate(-180deg);
-         right: 20px;
-         left: unset;
-         opacity: 1;
-         height: auto;
-         width: auto;
-         top: 11px;
-         font-size: 14px;
-         bottom: unset;
-         background: transparent;
-         transition-duration: .3s; }
-       header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.parent .nav-link.show::after {
-         transform: rotate(-90deg); } }
+
    @media only screen and (max-width: 1025px) {
      header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.startuper .nav-link {
        padding-bottom: 10px;
@@ -70,18 +39,14 @@
        -ms-flex-order: -1;
            order: -1;
        padding: 10px 10px 10px 65px; } }
-   @media only screen and (max-width: 641px) {
-     header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.c-buttons {
-       padding: 0px 20px 10px; } }
+
  
      @media only screen and (max-width: 1025px) {
        header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.submit-project {
          -ms-flex-order: -2;
              order: -2;
          padding: 10px 10px 10px 65px; } }
-     @media only screen and (max-width: 641px) {
-       header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.submit-project {
-         padding: 0px 20px 10px; } }
+
      @media (min-width: 1025px) and (max-width: 1055px) {
        header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.submit-project .btn {
          font-size:  0.84375rem; } }
@@ -114,10 +79,7 @@
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%; }
            }
-    @media screen and (min-width: 992px) {
-      header .navbar .navbar-nav {
-        position: relative;
-        z-index: 9; } }
+
     @media only screen and (max-width: 1025px) {
       header .navbar .navbar-nav .nav-item {
         text-align: center;
@@ -148,36 +110,26 @@
         @media (min-width: 1025px) and (max-width: 1055px) {
                   header .navbar .navbar-nav .nav-item .nav-link {
                     font-size:  0.84375rem; } }
-         @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
                   header .navbar .navbar-nav .nav-item .nav-link {
                     display: inline-block; }
                     header .navbar .navbar-nav .nav-item .nav-link:after {
                       display: none; } 
                     }
-                    @media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
                       header .navbar .navbar-nav .nav-item .btn {
                         width: 100%;
                         height: 45px;
                         line-height: 45px;
                         font-size:  1.375rem; } 
                       }
-              @media only screen and (max-width: 324px) {
-                      header .navbar .navbar-nav .nav-item .btn {
-                        width: 100%; } }
-                    @media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
                       header .navbar .navbar-nav .nav-item .btn.btn-transparent-black {
                         border-color: #ffffff;
                         color: #ffffff; }
                         header .navbar .navbar-nav .nav-item .btn.btn-transparent-black:hover {
                           background-color: #ffffff;
                           color: #000000; } }
-
-                                
-         
-@media only screen and (max-width: 641px) {
-  header .navbar .navbar-nav .nav-item.account ul.sous-title.dropdown-active {
-              padding: 0 0 0 40px; } 
-            }
 
    
         @media only screen and (max-width: 1025px) {
@@ -195,10 +147,7 @@
             text-align: center;
             z-index: 2; } 
           }
-        @media only screen and (max-width: 641px) {
-          header .navbar .navbar-nav .nav-item:hover ul.sous-title {
-            padding: 0 0 10px 40px; } 
-          }
+
       @media only screen and (max-width: 1025px) {
         header .navbar .navbar-nav .nav-item:hover {
           transform: none;
@@ -211,10 +160,7 @@
             background-color: transparent;
             white-space: initial; } 
           }
-@media only screen and (max-width: 641px) {
-          header .navbar .navbar-nav .nav-item ul.sous-title {
-            padding: 0 0 0 40px; } 
-          }
+
 @media only screen and (max-width: 1370px) {
           header .navbar .navbar-nav .nav-item ul.sous-title {
             margin: 0; } 
@@ -232,24 +178,8 @@
             display: none;
             padding: 0 0 0 95px; }
            }
-@media only screen and (max-width: 641px) {
-          header .navbar .navbar-nav .nav-item ul.sous-title {
-            padding: 0 0 0 40px; } 
-          }
-@media screen and (min-width: 992px) {
-          header .navbar .navbar-nav .nav-item ul.sous-title {
-            left: 47%;
-            transform: translateX(-50%) scaleY(0);
-            margin: 0;
-            padding: 43px 52px 0;
-            display: flex;
-            flex-wrap: wrap;
-            min-width: max-content;
-            width: 100%;
-            visibility: visible;
-            transform-origin: top;
-            top: 100%; } 
-          }
+
+
 @media only screen and (max-width: 1290px) {
             header .navbar .navbar-nav .nav-item ul.sous-title.show {
               top: 32px; } 
@@ -270,15 +200,8 @@
               z-index: 2;
               background-color: #ffffff; } 
 }
-              
-
-
-
-
-    
    
-
-              @media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
                 header .navbar-collapse {
                 flex-basis: 100%;
                 flex-grow: 1;

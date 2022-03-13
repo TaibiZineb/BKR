@@ -334,4 +334,14 @@ margin-left: 75%; }
 margin-left: 83.33333%; }
 .offset-lg-11 {
 margin-left: 91.66667%; } 
+@media only screen and (max-width: 600px) {
+    .col-lg-6{
+        max-width: 81%;
+    }
+    .col-lg-4{
+        max-width: 99%;
+        margin-left: -57px;
+    }
+
+}
 

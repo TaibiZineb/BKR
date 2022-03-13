@@ -1,13 +1,13 @@
 footer {
     background-color: $backfooter; 
     h4 {
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 600;
         color: $blanc;
         margin-bottom: 20px;
         text-transform: uppercase; }
     p {
-        font-size: 14px;
+        font-size: 15px;
         color: $blanc;
         line-height: 16px;
         margin: 20px 0; }  
@@ -45,7 +45,7 @@ footer {
         padding-top: 52px; 
         .container
         {
-            width: 90%;
+            width: 90rem;
             .b-footer__contact--bkr
             {
                 p 
@@ -53,11 +53,15 @@ footer {
                     font-size: 14px;
                     color: $blanc;
                     line-height: 16px;
-                    margin: 20px 0;
+                    margin: 22px 0;
                 }
             }
             .espaceprive
             {
+                h2 {
+                    font-size: 22px;
+                    color:$blanc;
+                }
                 .btns
                 {
                     .btn {
