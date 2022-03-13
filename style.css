@@ -555,11 +555,14 @@ a :hover {
 
 @media only screen and (max-width: 600px) {
   .col-lg-6 {
-    max-width: 81%;
+    max-width: 61%;
   }
   .col-lg-4 {
     max-width: 99%;
     margin-left: -57px;
+  }
+  .col-md-6 {
+    max-width: 110%;
   }
 }
 
@@ -1065,7 +1068,7 @@ a :hover {
     margin-bottom: 1.875rem;
   }
   .publications h2 {
-    font-size: 12px;
+    font-size: 18px;
     margin: 45px 0 4px;
   }
   .publications .pub {
@@ -1094,8 +1097,7 @@ a :hover {
     margin-left: -57px;
   }
   .publications .pub.first img {
-    width: 134%;
-    max-width: unset;
+    width: 101%;
     left: -15px;
   }
   .publications .pub.first p {
@@ -1252,16 +1254,33 @@ a :hover {
 
 @media only screen and (max-width: 600px) {
   .actualite {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+  }
+  .actualite h2 {
+    font-size: 18px;
+    text-align: center;
   }
   .actualite .actus {
-    padding-top: 0px;
+    padding-top: 0;
   }
-  .actualite .actus h2 {
-    font-size: 1.125rem;
+  .actualite .actus .time {
+    text-align: center;
   }
   .actualite .actus p {
     font-size: 0.875rem;
+  }
+  .actualite .btn-actus {
+    margin-top: 0;
+    text-align: center;
+  }
+  .actualite .bloc-column :first-child {
+    padding: 0 11px;
+  }
+  .actualite .bloc-column :first-child h2 {
+    margin-bottom: 0;
+  }
+  .actualite .card-rapport {
+    padding: 0;
   }
 }
 
@@ -1439,6 +1458,10 @@ a :hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .plateforme {
+    display: block;
+    margin-left: 2px;
+  }
   .plateforme .content-nos-garanties h2 {
     font-size: 22px;
   }

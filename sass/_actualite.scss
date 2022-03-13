@@ -106,15 +106,35 @@
 }
 @media only screen and (max-width: 600px) {
     .actualite {
-        margin-bottom: 0px; 
+        margin-bottom: 0; 
+        h2{
+            font-size: 18px;
+            text-align: center;
+        }
         .actus {
-            padding-top: 0px; 
-            h2{
-                font-size: 1.125rem;
+            padding-top: 0; 
+           .time{
+                text-align: center;
             }
             p {
                 font-size: 0.875rem;
             }
         } 
+        .btn-actus{
+            margin-top: 0;
+            text-align: center;
+        }
+        .bloc-column 
+        {
+            :first-child{
+                padding: 0 11px;
+                h2{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .card-rapport{
+            padding: 0;
+        }
     }
 }
