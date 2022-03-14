@@ -135,8 +135,9 @@
     .plateforme {
         .row{
             margin-left: -5px ;
+            display: block; 
         }
-        display: block;   
+         
         .content-nos-garanties {
         
             h2 {
@@ -145,7 +146,7 @@
             p {
                 font-size: 16px; }
             .btn{
-                padding: 94px;
+                padding-left: 94px;
             }
           }
           .video-plateforme{
@@ -159,7 +160,7 @@
         }
     } 
 }
-@media only screen and (max-width: 1024px)
+@media (min-width:768px)and(max-width: 1024px)
 {
     .plateforme {
       padding-bottom: 30px;
