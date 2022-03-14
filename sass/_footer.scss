@@ -86,6 +86,10 @@ footer {
 {
     footer
     {
+        width: 100%;
+        .row{
+            margin-left: 15px;
+        }
         .b-footer__bottomline {
             padding: 30px 0 10px;
             display: flex;
@@ -93,6 +97,13 @@ footer {
             padding-left: 10px;
             padding-right: 10px; 
          } 
-        } 
+    } 
+    .b-footer{
+        .b-footer__contact{
+            .container{
+                width: 85%;
+            }
+        }
+    }
 }
 

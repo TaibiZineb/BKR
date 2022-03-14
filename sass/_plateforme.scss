@@ -129,8 +129,8 @@
     }
 
 }
-
-@media only screen and (max-width: 1024px) {
+/*
+@media only screen and (max-width: 1024px){
     .plateforme {
       padding-bottom: 30px;
       padding-top: 20px; 
@@ -151,16 +151,24 @@
             }
         }
     } 
-}
+}*/
 @media only screen and (max-width: 600px) {
+    
     .plateforme {
-        display: block;
-        margin-left: 2px;
+        .row{
+            margin-left: -5px ;
+        }
+        display: block;   
         .content-nos-garanties {
+        
             h2 {
-                font-size: 22px; }
+                font-size: 22px; 
+                margin: -8.5rem 0 1.125rem;}
             p {
                 font-size: 16px; }
+            .btn{
+                padding: 94px;
+            }
           }
           .video-plateforme{
             .h-video{

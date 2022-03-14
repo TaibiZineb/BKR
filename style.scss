@@ -55,3 +55,9 @@
         opacity: 1;
     }
   }
+  @media only screen and (max-width: 600px) {
+      #back-to-top{
+          position: relative;
+          right:- 331px;
+      }
+  }
