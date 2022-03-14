@@ -575,6 +575,18 @@ a :hover {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 73%;
+            flex: 0 0 73%;
+    /* max-width: 97%; */
+  }
+}
+
 .main-header {
   position: fixed;
   top: 0;
@@ -911,6 +923,25 @@ a :hover {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  header .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    position: fixed;
+    right: -50%;
+    height: 100%;
+    width: 50%;
+    padding-top: 0;
+    color: #ffffff;
+    overflow: scroll;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+}
+
 .publications {
   margin-bottom: 2.50rem;
 }
@@ -1126,15 +1157,28 @@ a :hover {
   }
 }
 
-/*
-@media only screen and (max-width: 1024px)
- {
-    .publications {
-        h2 
-        {
-            font-size: 30px; }
-    } 
-}*/
+@media only screen and (max-width: 1024px) {
+  .publications h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 66px 0 4px;
+  }
+  .publications .container {
+    margin-right: 18px;
+  }
+  .publications .row {
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+  .publications .pub.first img {
+    left: -53px;
+  }
+  .publications .discover {
+    margin-top: 4px;
+    text-align: center;
+  }
+}
+
 .actualite {
   padding: 65px 0 50px;
   position: relative;
@@ -1249,18 +1293,6 @@ a :hover {
   transition: all 0.4s ease-in-out;
 }
 
-@media only screen and (max-width: 1024px) {
-  .actualite {
-    margin-bottom: 0px;
-  }
-  .actualite h2 {
-    font-size: 24px;
-  }
-  .actualite .bloc-column :first-child {
-    padding: 0 15px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .actualite {
     margin-bottom: 0;
@@ -1290,6 +1322,15 @@ a :hover {
   }
   .actualite .card-rapport {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .actualite {
+    margin-bottom: 0px;
+  }
+  .actualite h2 {
+    font-size: 24px;
   }
 }
 
@@ -1447,29 +1488,6 @@ a :hover {
   top: 0;
 }
 
-/*
-@media only screen and (max-width: 1024px){
-    .plateforme {
-      padding-bottom: 30px;
-      padding-top: 20px; 
-      .content-nos-garanties {
-        padding: 20px; 
-        h2 {
-            font-size: 30px; }
-            p {
-                font-size: 18px; }
-        }
-        .video-plateforme{
-            .h-video{
-                .p-iframe {
-                    iframe {
-                        height: 18.75rem; 
-                    }
-                }
-            }
-        }
-    } 
-}*/
 @media only screen and (max-width: 600px) {
   .plateforme {
     display: block;
@@ -1489,6 +1507,29 @@ a :hover {
   }
   .plateforme .video-plateforme .h-video .p-iframe iframe {
     height: 12.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .plateforme {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .plateforme .row {
+    margin-right: 2px;
+    margin-left: -54px;
+  }
+  .plateforme .content-nos-garanties {
+    padding: 20px;
+  }
+  .plateforme .content-nos-garanties h2 {
+    font-size: 22px;
+  }
+  .plateforme .content-nos-garanties p {
+    font-size: 18px;
+  }
+  .plateforme .video-plateforme .h-video .p-iframe iframe {
+    height: 18.75rem;
   }
 }
 

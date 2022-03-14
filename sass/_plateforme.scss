@@ -129,29 +129,7 @@
     }
 
 }
-/*
-@media only screen and (max-width: 1024px){
-    .plateforme {
-      padding-bottom: 30px;
-      padding-top: 20px; 
-      .content-nos-garanties {
-        padding: 20px; 
-        h2 {
-            font-size: 30px; }
-            p {
-                font-size: 18px; }
-        }
-        .video-plateforme{
-            .h-video{
-                .p-iframe {
-                    iframe {
-                        height: 18.75rem; 
-                    }
-                }
-            }
-        }
-    } 
-}*/
+
 @media only screen and (max-width: 600px) {
     
     .plateforme {
@@ -175,6 +153,34 @@
                 .p-iframe {
                     iframe {
                         height: 12.5rem; 
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 1024px)
+{
+    .plateforme {
+      padding-bottom: 30px;
+      padding-top: 20px; 
+      .row{
+        margin-right: 2px;
+        margin-left: -54px;
+    }
+      .content-nos-garanties {
+        padding: 20px; 
+
+        h2 {
+            font-size: 22px; }
+            p {
+                font-size: 18px; }
+        }
+        .video-plateforme{
+            .h-video{
+                .p-iframe {
+                    iframe {
+                        height: 18.75rem; 
                     }
                 }
             }
