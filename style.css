@@ -1656,11 +1656,12 @@ a :hover {
   }
   .reassurance_chiffres .reassurance .row {
     margin-left: 16px;
+    display: block;
   }
   .reassurance_chiffres .reassurance .row img {
     -ms-flex-line-pack: center;
         align-content: center;
-    padding-left: 122px;
+    padding-left: 90px;
   }
   .reassurance_chiffres .reassurance .row h3 {
     font-size: 17px;
@@ -1687,9 +1688,6 @@ a :hover {
   }
   .reassurance_chiffres .reassurance h2 {
     font-size: 22px;
-  }
-  .reassurance_chiffres .reassurance .row {
-    display: block;
   }
   .reassurance_chiffres .reassurance .row img {
     -ms-flex-line-pack: center;
