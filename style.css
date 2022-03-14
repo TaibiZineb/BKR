@@ -599,17 +599,6 @@ a :hover {
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
 }
 
-.sr-only {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
 .navbburger .nav-m {
   position: fixed;
   left: 100%;
@@ -990,8 +979,24 @@ a :hover {
   }
 }
 
-.publications {
-  margin-bottom: 2.50rem;
+.banner-slide .container {
+  width: 100%;
+  margin: 61px;
+  position: relative;
+  margin-left: -18px;
+}
+
+.banner-slide .container img {
+  width: 1900px;
+  height: 800px;
+  position: relative;
+}
+
+.banner-slide .container .text-banner {
+  width: 100%;
+  text-align: end;
+  z-index: 99999;
+  position: absolute;
 }
 
 .publications h2 {
@@ -1367,7 +1372,7 @@ a :hover {
     text-align: center;
   }
   .actualite .bloc-column :first-child {
-    padding: 0 1px;
+    padding: 0 11px;
   }
   .actualite .bloc-column :first-child h2 {
     margin-bottom: 0;

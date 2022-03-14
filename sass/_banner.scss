@@ -1,0 +1,22 @@
+.banner-slide{
+    .container{
+        width: 100%;
+        margin: 61px;
+        position: relative;
+        margin-left: -18px;
+        img{
+            width: 1900px;
+            height: 800px;
+            position: relative;
+        }
+        .text-banner{
+            width: 100%;
+            text-align: end;
+            z-index: 99999;
+            position: absolute;
+        }
+    }
+  
+ 
+    
+}
