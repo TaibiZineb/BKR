@@ -188,8 +188,10 @@
     </div>
 </div>
 <div class="publications">
+    <div class="owl-carousel owl-theme">
     <div class="container">
         <h2>Nos dernières publications</h2>
+        <div class="slide slide-4">
         <div class="container">
             <div class="row">
                     <div class="col-md-6 col-lg-8 pub first">
@@ -237,6 +239,9 @@
                             </a>
                     </div>
             </div>
+        </div>
+        </div>
+        <div class="slide slide-5">
             <div class="row">
                 <div class="divg">
                     <a href="">
@@ -293,6 +298,8 @@
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
     <div class="discover">
             <a href="" class="btn">
@@ -604,6 +611,14 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function () {
+      var toggler = $(".toggle-switch");
+      toggler.click(function () {
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
 <script src="js/script.js"></script>
 </body>
 </html>
