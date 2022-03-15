@@ -626,6 +626,7 @@ a :hover {
 
 .navbburger .nav-m .Cnav-s {
   background-color: #3ca7f1;
+  margin-left: -40px;
 }
 
 .navbburger .nav-m .Cnav-s .nav-s {
@@ -983,18 +984,11 @@ a :hover {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .owl-carousel {
   width: 100%;
 }
 
-.slide {
+.owl-carousel .slide {
   width: 100%;
   height: 70vh;
   position: relative;
@@ -1002,35 +996,7 @@ a :hover {
   background-repeat: no-repeat;
 }
 
-.slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #000000;
-}
-
-.slide-1 {
-  background-image: url(../images/image1.png);
-  padding-left: 50%;
-}
-
-.slide-2 {
-  background-image: url(../images/Image2.png);
-  padding-left: 50%;
-}
-
-.slide-3 {
-  background-image: url(../images/Image3.png);
-}
-
-.slide-3 .slide-content {
-  width: 50%;
-  padding-left: 44px;
-}
-
-.slide-content {
+.owl-carousel .slide .slide-content {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1039,23 +1005,55 @@ a :hover {
   padding-left: 30px;
 }
 
-.slide-content h1 {
+.owl-carousel .slide .slide-content h1 {
   font-family: "Anton", serif;
   font-size: 45px;
   text-transform: uppercase;
 }
 
-.slide-content p {
+.owl-carousel .slide .slide-content p {
   font-family: "Lato", serif;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.slide-content a {
+.owl-carousel .slide .slide-content a {
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
   text-transform: uppercase;
+}
+
+.owl-carousel .slide .slide-content a i {
+  margin-left: 12px;
+}
+
+.owl-carousel .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+}
+
+.owl-carousel .slide-1 {
+  background-image: url(../images/image1.png);
+  padding-left: 50%;
+}
+
+.owl-carousel .slide-2 {
+  background-image: url(../images/Image2.png);
+  padding-left: 50%;
+}
+
+.owl-carousel .slide-3 {
+  background-image: url(../images/Image3.png);
+}
+
+.owl-carousel .slide-3 .slide-content {
+  width: 50%;
+  padding-left: 44px;
 }
 
 .owl-dots {
@@ -1065,8 +1063,8 @@ a :hover {
 }
 
 .owl-dots span {
-  width: 20px !important;
-  height: 20px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .owl-dots button {
@@ -1088,6 +1086,25 @@ a :hover {
 
 .owl-next {
   right: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .owl-carousel .slide .slide-content {
+    padding-left: 10px;
+  }
+  .owl-carousel .slide .slide-content h1 {
+    font-size: 20px;
+  }
+  .owl-carousel .slide .slide-content p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .owl-carousel .slide .slide-content i {
+    margin-left: 2px;
+  }
+  .owl-carousel .slide-2 {
+    padding-left: 42%;
+  }
 }
 
 .publications h2 {
@@ -1219,6 +1236,7 @@ a :hover {
   border-color: transparent;
   font-size: 17px;
   text-transform: uppercase;
+  padding-left: 40%;
 }
 
 .publications .discover .btn :hover {

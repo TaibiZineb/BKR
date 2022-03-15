@@ -29,7 +29,8 @@
           } 
           .Cnav-s
           {
-            background-color: $iconburger;
+                background-color: $iconburger;
+                margin-left: -40px;
             .nav-s{
                 padding-left: 33px;
             }

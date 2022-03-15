@@ -1,84 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .owl-carousel {
     width: 100%;
-}
-
-.slide {
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.slide::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $noir;
-}
-
-.slide-1 {
-    background-image: url(../images/image1.png);
-    padding-left: 50%;
-}
-
-.slide-2 {
-    background-image: url(../images/Image2.png);
-    padding-left: 50%;
-}
-
-.slide-3 {
-    background-image: url(../images/Image3.png);
-    .slide-content {
-        width: 50%;
-        padding-left: 44px;
+    .slide {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .slide-content 
+        {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $blanc;
+            padding-left: 30px;
+            h1 {
+                font-family: "Anton", serif;
+                font-size: 45px;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: "Lato", serif;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            a{
+                color: $blanc;
+                text-decoration: none;
+                background-color: transparent;
+                text-transform: uppercase;
+                i{
+                    margin-left: 12px;
+                }
+            }
+           
+        }
+    }
+    .slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $noir;
+    }
+    .slide-1 {
+        background-image: url(../images/image1.png);
+        padding-left: 50%;
+    }
+    .slide-2 {
+        background-image: url(../images/Image2.png);
+        padding-left: 50%;
+    }
+    .slide-3 {
+        background-image: url(../images/Image3.png);
+        .slide-content {
+            width: 50%;
+            padding-left: 44px;
+        }
     }
 }
-
-
-
-.slide-content 
-{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $blanc;
-    padding-left: 30px;
-    h1 {
-        font-family: "Anton", serif;
-        font-size: 45px;
-        text-transform: uppercase;
-    }
-    p {
-        font-family: "Lato", serif;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    a{
-        color: $blanc;
-        text-decoration: none;
-        background-color: transparent;
-        text-transform: uppercase;
-    }
-}
-
 
 .owl-dots {
     width: 100%;
     text-align: center;
     position: absolute;
     span {
-        width: 20px !important;
-        height: 20px !important;
+        width: 30px !important;
+        height: 30px !important;
     }
     button {
         border: none !important;
@@ -93,8 +82,6 @@
     font-size: 80px !important;
     font-weight: bolder !important;
 }
-
-
 .owl-prev {
     @extend %owl;
     left: 1%;
@@ -103,4 +90,28 @@
 .owl-next {
     @extend %owl;
     right: 1%;
+}
+
+@media only screen and (max-width: 600px){
+    .owl-carousel {
+        .slide{
+            .slide-content 
+            {
+                padding-left: 10px;
+                h1 {
+                    font-size: 20px;
+                }
+                p {
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                }
+                i{
+                    margin-left: 2px;
+                }
+            }
+        }
+        .slide-2 {
+            padding-left: 42%;
+        }
+    }
 }
