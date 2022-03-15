@@ -67,20 +67,25 @@ footer {
                     .btn {
                         color: $blanc;
                         border: 1px solid $blanc;
+                        height: 40px;
+                        width: 160px;
+                    }
+                    .btn:hover {
+                        background-color: $blanc;
+                        color: $noir;
                     }
                 }
             }
-        }
-        .copyright
-        {
-            .pcopyright
+            .copyright
             {
-                text-align: center;
+                .pcopyright
+                {
+                    text-align: center;
 
+                }
             }
         }
     }
-
 }
 @media only screen and (max-width: 600px)
 {
