@@ -119,6 +119,78 @@
         }
 
     }
+    .container{
+        .row
+        {
+            display: flex;
+            .divg{
+                background-image: url(../images/Rectangle.png);
+                width: 40%;
+                .row{
+                    .content{
+                        margin-left: 22px;
+                        align-items: center;
+                        p{
+                            line-height: 1.2;
+                            letter-spacing: -1px;
+                            min-height: 120px;
+                            color: $blanc;
+                            font-size: 23px;
+                            align-items: center;
+                        }
+                        .time
+                        {
+                            color: $blanc;
+                        }
+                    }
+                }
+            }
+            .outer {
+                width: 60%;
+                float: right;
+                height: 50%;
+                a{
+                    color: $blanc;
+                    text-decoration: none;
+                    background-color: transparent; 
+                        :hover {
+                            color: $hoverbtn;
+                            text-decoration: underline; }
+                }
+                .inner {
+                    float:left;
+                    width:50%;
+                    p{
+                        line-height: 1.2;
+                        letter-spacing: -1px;
+                        min-height: 120px;
+                        font-size: 23px;
+                        align-items: center;
+                    }
+                }
+                .inner1{
+                    background-image: url(../images/Rectangle1.png);
+                    background-repeat: no-repeat;
+                    height: 30%;
+                }
+                .inner2{
+                    background-color: $button;
+                    height: 30%;
+                }
+                .inner4{
+                    background-image: url(../images/Rectangle1.png);
+                    background-repeat: no-repeat;
+                    height: 30%;
+                }
+                .inner3{
+                    color: $button;
+                    background-color: $blanc;
+                    height: 30%;
+                }
+
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
