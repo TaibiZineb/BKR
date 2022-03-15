@@ -6,15 +6,15 @@
 
 .owl-carousel {
     width: 100%;
-    height: 100vh;
 }
 
 .slide {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 .slide::before {
@@ -23,86 +23,84 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $noir;
 }
 
 .slide-1 {
     background-image: url(../images/image1.png);
+    padding-left: 50%;
 }
 
 .slide-2 {
     background-image: url(../images/Image2.png);
+    padding-left: 50%;
 }
 
 .slide-3 {
     background-image: url(../images/Image3.png);
+    .slide-content {
+        width: 50%;
+        padding-left: 44px;
+    }
 }
 
-.slide-content {
-    text-align: center;
+
+
+.slide-content 
+{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
-    padding: 0 20%;
+    color: $blanc;
+    padding-left: 30px;
+    h1 {
+        font-family: "Anton", serif;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: "Lato", serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    a{
+        color: $blanc;
+        text-decoration: none;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
 }
 
-.slide-content h1 {
-    font-family: "Anton", serif;
-    font-size: 45px;
-    text-transform: uppercase;
-}
-
-.slide-content p {
-    font-family: "Lato", serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.slide-content button {
-    font-family: "Roboto", serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 10px 25px;
-    border: none;
-}
 
 .owl-dots {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 1%;
+    span {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    button {
+        border: none !important;
+        outline: none !important;
+    }
 }
 
-.owl-dots span {
-    width: 20px !important;
-    height: 20px !important;
-}
-
-.owl-dots button {
-    border: none !important;
-    outline: none !important;
-}
-
-.owl-nav button {
-    border: none !important;
-    outline: none !important;
-}
-
-.owl-prev, .owl-next {
+%owl{
     position: absolute;
-    top: 50%;
-    color: #fff !important;
-    font-size: 65px !important;
+    top: 20%;
+    color: $noir!important;
+    font-size: 80px !important;
     font-weight: bolder !important;
-    background:none !important;
 }
+
 
 .owl-prev {
+    @extend %owl;
     left: 1%;
 }
 
 .owl-next {
+    @extend %owl;
     right: 1%;
 }
