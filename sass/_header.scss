@@ -12,16 +12,17 @@
     .nav-m
     {
         position: fixed;
-        left: 100%;
-        top: 91px;
+        left: -100%;
+        top: 65px;
         gap: 0;
         flex-direction: column;
         background-color: $hoverbtn;
         width: 24%;
         transition: 0.3s;
-        margin-left: 10px;
+        margin-left: 3px;
         .nav-i{
             margin: 20px 0;
+            padding-left: 33px;
             ul.sous-title{
                 display: none;
             }
@@ -29,7 +30,9 @@
           .Cnav-s
           {
             background-color: $iconburger;
-            margin-left: -40px;
+            .nav-s{
+                padding-left: 33px;
+            }
           }  
     }
     .nav-m.active{
