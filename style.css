@@ -588,7 +588,7 @@ a :hover {
 }
 
 .main-header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -984,9 +984,7 @@ a :hover {
 }
 
 .slide-container {
-  max-width: 800px;
   position: relative;
-  margin: auto;
 }
 
 .prev, .next {
