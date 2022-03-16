@@ -1260,8 +1260,16 @@ a :hover {
 }
 
 .publications .grid2 .divg {
-  background-image: url(../images/Rectangle.png);
+  position: relative;
   width: 40%;
+}
+
+.publications .grid2 .divg img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .publications .grid2 .divg .row .content {
@@ -1306,6 +1314,16 @@ a :hover {
 .publications .grid2 .outer .inner {
   float: left;
   width: 50%;
+  position: relative;
+}
+
+.publications .grid2 .outer .inner img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 .publications .grid2 .outer .inner p {
@@ -1318,20 +1336,8 @@ a :hover {
           align-items: center;
 }
 
-.publications .grid2 .outer .inner1 {
-  background-image: url(../images/Rectangle1.png);
-  background-repeat: no-repeat;
-  height: 30%;
-}
-
 .publications .grid2 .outer .inner2 {
   background-color: #1075bb;
-  height: 30%;
-}
-
-.publications .grid2 .outer .inner4 {
-  background-image: url(../images/Rectangle1.png);
-  background-repeat: no-repeat;
   height: 30%;
 }
 
@@ -1435,7 +1441,7 @@ a :hover {
     min-height: 0;
   }
   .publications .grid2 .divg {
-    width: 95%;
+    width: 97%;
   }
   .publications .grid2 .divg .col-lg-6 {
     max-width: 79%;
@@ -1446,7 +1452,7 @@ a :hover {
     line-height: 2;
   }
   .publications .grid2 .outer {
-    width: 95%;
+    width: 97%;
     float: none;
   }
   .publications .grid2 .outer .inner p {
