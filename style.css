@@ -1958,9 +1958,7 @@ a :hover {
     display: block;
   }
   .reassurance_chiffres .reassurance .row img {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding-left: 90px;
+    padding-left: 34%;
   }
   .reassurance_chiffres .chiffres .row {
     display: -webkit-box;
