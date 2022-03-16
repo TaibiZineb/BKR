@@ -218,56 +218,96 @@
         }
         h2 {
             font-size: 18px; 
-            margin: 45px 0 4px;
+            margin: 65px 0 43px;
         }
-        .pub{
-            padding: 25px 20px; 
-            :hover{
-                opacity: 0.5; 
+        a:hover{
+            color: $blanc;
+            text-decoration: none;
+        }
+        .grid{
+            display: block;
+        }
+        .grid1{
+            .pub{
+                padding: 25px 20px; 
+                :hover{
+                    opacity: 0.5; 
+                }
+                .time{
+                    margin-bottom: 3px; 
+                }
+                span{
+                    color: $blanc;
+                    font-size: 12px;
+                    transition: all 0.4s ease-in; 
+                }
+                p{
+                    color: $blanc;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 1; 
+                }
+                .article{
+                    padding: 3px 0px 2px 2px;
+                    margin-left: 0px;
+                }
             }
-            .time{
-                margin-bottom: 3px; 
+            .pub.first
+            {
+                img {
+                    width: 100%;
+                } 
+                p{
+                    font-size: 15px;
+                }
             }
-            span{
-                color: rgba(255, 255, 255, 0.7);
-                font-size: 12px;
-                transition: all 0.4s ease-in; 
+            .pub.second{
+                p{
+                    font-size: 15px;
+                    min-height: 0;
+                }
             }
-            p{
-                color: $blanc;
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 1; 
-            }
-            .article{
-                padding: 3px 0px 2px 2px;
-                margin-left: 0px;
+            .pub.third{
+                p{
+                    font-size: 15px;
+                    min-height: 0;
+                }
             }
         }
-        .pub.first
-        {
-            img {
-                width: 100%;
-            } 
-            p{
-                font-size: 15px;
+        .grid2{
+            .divg{
+                width: 95%;
+                .col-lg-6 {
+                    max-width: 79%;
+                }
+                .row{
+                    .content{
+                        p{
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 2; 
+                        }
+                    }
+                }
+            }
+            .outer{
+                width: 95%;
+                float:none;
+                .inner {
+                    p{
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
             }
         }
-        .pub.second{
-            p{
-                font-size: 15px;
-                min-height: 0;
-            }
-        }
-        .pub.third{
-            p{
-                font-size: 15px;
-                min-height: 0;
-            }
-        }
+       
         .discover{
             margin-top: 0;
             text-align: center;
+            .btn{
+                padding-left: 9%;
+            }
         }
     } 
 }
@@ -278,7 +318,7 @@
         {
             font-size: 30px; 
             text-align: center;
-            margin: 66px 0 4px;
+            margin: 81px 0 26px;
         }
         .container{
             margin-right: 18px;

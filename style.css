@@ -1395,50 +1395,79 @@ a :hover {
   }
   .publications h2 {
     font-size: 18px;
-    margin: 45px 0 4px;
+    margin: 65px 0 43px;
   }
-  .publications .pub {
+  .publications a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .publications .grid {
+    display: block;
+  }
+  .publications .grid1 .pub {
     padding: 25px 20px;
   }
-  .publications .pub :hover {
+  .publications .grid1 .pub :hover {
     opacity: 0.5;
   }
-  .publications .pub .time {
+  .publications .grid1 .pub .time {
     margin-bottom: 3px;
   }
-  .publications .pub span {
-    color: rgba(255, 255, 255, 0.7);
+  .publications .grid1 .pub span {
+    color: #ffffff;
     font-size: 12px;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
   }
-  .publications .pub p {
+  .publications .grid1 .pub p {
     color: #ffffff;
     font-size: 15px;
     font-weight: 500;
     line-height: 1;
   }
-  .publications .pub .article {
+  .publications .grid1 .pub .article {
     padding: 3px 0px 2px 2px;
     margin-left: 0px;
   }
-  .publications .pub.first img {
+  .publications .grid1 .pub.first img {
     width: 100%;
   }
-  .publications .pub.first p {
+  .publications .grid1 .pub.first p {
     font-size: 15px;
   }
-  .publications .pub.second p {
+  .publications .grid1 .pub.second p {
     font-size: 15px;
     min-height: 0;
   }
-  .publications .pub.third p {
+  .publications .grid1 .pub.third p {
     font-size: 15px;
     min-height: 0;
+  }
+  .publications .grid2 .divg {
+    width: 95%;
+  }
+  .publications .grid2 .divg .col-lg-6 {
+    max-width: 79%;
+  }
+  .publications .grid2 .divg .row .content p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+  }
+  .publications .grid2 .outer {
+    width: 95%;
+    float: none;
+  }
+  .publications .grid2 .outer .inner p {
+    font-size: 15px;
+    font-weight: 500;
   }
   .publications .discover {
     margin-top: 0;
     text-align: center;
+  }
+  .publications .discover .btn {
+    padding-left: 9%;
   }
 }
 
@@ -1446,7 +1475,7 @@ a :hover {
   .publications h2 {
     font-size: 30px;
     text-align: center;
-    margin: 66px 0 4px;
+    margin: 81px 0 26px;
   }
   .publications .container {
     margin-right: 18px;
