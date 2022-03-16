@@ -1,3 +1,7 @@
+ *::before, 
+*::after {
+    box-sizing: border-box;
+}
  ul, li 
  {
      list-style: none;
@@ -14,15 +18,16 @@
      font-weight: 400;
      line-height: 1.5;
      @extend %global;
-    ::before
-    {
-        @extend %global;
-    }
-    ::after
-    {
-        @extend %global;
-    }
+
  }
+ *::before
+    {
+        @extend %global;
+    }
+    *::after
+    {
+        @extend %global;
+    }
  .row {
     display: flex;
     flex-wrap: wrap;
@@ -32,8 +37,7 @@
  .container 
 {
     margin: 0 auto;
-    width: 100%;
-    max-width: 75rem;
+    max-width: 82rem;
     padding: 0 20px; 
 } 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {

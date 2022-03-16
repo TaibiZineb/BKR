@@ -1,8 +1,14 @@
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ul, li {
   list-style: none;
 }
 
-*, * ::before, * ::after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -28,8 +34,7 @@ ul, li {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 75rem;
+  max-width: 82rem;
   padding: 0 20px;
 }
 
@@ -1526,6 +1531,7 @@ a :hover {
 
 .actualite .bloc-column :first-child {
   padding: 0;
+  padding-left: 36px;
 }
 
 .actualite .bloc-column :first-child h2 {
@@ -1533,6 +1539,17 @@ a :hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.actualite .bloc-column :first-child a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.actualite .bloc-column :first-child a :hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .actualite .actus {
@@ -1562,8 +1579,6 @@ a :hover {
   font-weight: 300;
   color: #ffffff;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
 }
 
 .actualite .actus span {
@@ -1848,6 +1863,7 @@ a :hover {
 
 .reassurance_chiffres {
   position: relative;
+  padding: 13px;
 }
 
 .reassurance_chiffres .map-reass {
@@ -1862,7 +1878,6 @@ a :hover {
 
 .reassurance_chiffres .reassurance {
   position: relative;
-  padding: 40px 0 83px;
   z-index: 99999;
 }
 
@@ -1873,9 +1888,30 @@ a :hover {
   text-transform: uppercase;
 }
 
-.reassurance_chiffres .chiffres .row {
-  margin-left: 34px;
+.reassurance_chiffres .reassurance .row {
   margin-right: 0;
+  margin-left: 0;
+  margin: 20px;
+}
+
+.reassurance_chiffres .reassurance .row img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 40%;
+}
+
+.reassurance_chiffres .reassurance .row h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reassurance_chiffres .reassurance .row p {
+  text-align: center;
+}
+
+.reassurance_chiffres .chiffres .row {
+  text-align: center;
 }
 
 .reassurance_chiffres .chiffres .c-chiffres .c-chiffres-item h3 {
@@ -1926,11 +1962,6 @@ a :hover {
         align-content: center;
     padding-left: 90px;
   }
-  .reassurance_chiffres .reassurance .row h3 {
-    font-size: 17px;
-    font-weight: 500;
-    text-align: center;
-  }
   .reassurance_chiffres .chiffres .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1956,11 +1987,6 @@ a :hover {
     -ms-flex-line-pack: center;
         align-content: center;
     padding-left: 64px;
-  }
-  .reassurance_chiffres .reassurance .row h3 {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
   }
   .reassurance_chiffres .chiffres .row {
     display: -webkit-box;
@@ -2042,6 +2068,10 @@ footer ul li a :hover {
 .b-footer .b-footer__contact .container .espaceprive h2 {
   font-size: 22px;
   color: #ffffff;
+}
+
+.b-footer .b-footer__contact .container .espaceprive .btns {
+  padding: 12px;
 }
 
 .b-footer .b-footer__contact .container .espaceprive .btns .btn {
