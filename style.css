@@ -1146,6 +1146,11 @@ a :hover {
   text-align: center;
 }
 
+.publications .BprevNext {
+  float: right;
+  margin-top: -35px;
+}
+
 .publications .grid {
   display: -webkit-box;
   display: -ms-flexbox;
