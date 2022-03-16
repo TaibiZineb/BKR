@@ -1027,35 +1027,51 @@ a :hover {
 }
 
 .owl-carousel .slide .slide-content {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 31%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #ffffff;
-  padding-left: 30px;
 }
 
-.owl-carousel .slide .slide-content h1 {
+.owl-carousel .slide .slide-content .slide-text {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 50%;
+}
+
+.owl-carousel .slide .slide-content .slide-text h1 {
   font-family: "Anton", serif;
   font-size: 30px;
   text-transform: uppercase;
 }
 
-.owl-carousel .slide .slide-content p {
+.owl-carousel .slide .slide-content .slide-text p {
   font-family: "Lato", serif;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.owl-carousel .slide .slide-content a {
+.owl-carousel .slide .slide-content .slide-text a {
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
   text-transform: uppercase;
 }
 
-.owl-carousel .slide .slide-content a i {
+.owl-carousel .slide .slide-content .slide-text a i {
   margin-left: 12px;
+}
+
+.owl-carousel .slide .slide-content .slide-img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.8;
 }
 
 .owl-carousel .slide::before {
@@ -1065,25 +1081,6 @@ a :hover {
   left: 0;
   width: 100%;
   background-color: #000000;
-}
-
-.owl-carousel .slide-1 {
-  background-image: url(../images/image1.png);
-  padding-left: 50%;
-}
-
-.owl-carousel .slide-2 {
-  background-image: url(../images/Image2.png);
-  padding-left: 50%;
-}
-
-.owl-carousel .slide-3 {
-  background-image: url(../images/Image3.png);
-}
-
-.owl-carousel .slide-3 .slide-content {
-  width: 50%;
-  padding-left: 44px;
 }
 
 .owl-dots {
@@ -1119,21 +1116,15 @@ a :hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .owl-carousel .slide .slide-content {
-    padding-left: 10px;
+  .owl-carousel .slide .slide-content .slide-text {
+    bottom: 22%;
+    padding-left: 36%;
   }
-  .owl-carousel .slide .slide-content h1 {
+  .owl-carousel .slide .slide-content .slide-text h1 {
     font-size: 20px;
   }
-  .owl-carousel .slide .slide-content p {
-    margin-bottom: 10px;
+  .owl-carousel .slide .slide-content .slide-text p {
     font-size: 12px;
-  }
-  .owl-carousel .slide .slide-content i {
-    margin-left: 2px;
-  }
-  .owl-carousel .slide-2 {
-    padding-left: 42%;
   }
 }
 
